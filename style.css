@@ -19,9 +19,13 @@
     position: relative;
     overflow-x: hidden;
     /* Cursor personalizado */
-    cursor: url("img/lorena.png"), auto;
+    cursor: url("img/lorena.png"), 64 64, auto;
   }
   
+  a {
+    color: white;
+  }
+
   /* ------------------------------------------
      CORAÇÕES CAINDO (CONTAINER)
   ------------------------------------------ */
