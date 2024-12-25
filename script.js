@@ -1,14 +1,38 @@
+// ====================================================
+// 1) SENHA DE 4 DÍGITOS (Overlay) + Proteção do Site
+// ====================================================
+const CORRECT_PASSWORD = "1910"; // Ajuste a senha aqui
+
+// Ao carregar DOM, associamos eventos para o overlay de senha
+window.addEventListener("DOMContentLoaded", () => {
+  const passwordOverlay = document.getElementById("password-overlay");
+  const passwordInput = document.getElementById("passwordInput");
+  const accessBtn = document.getElementById("accessBtn");
+
+  accessBtn.addEventListener("click", () => {
+    const userInput = passwordInput.value;
+    if (userInput === CORRECT_PASSWORD) {
+      // Remove o overlay ao digitar senha correta
+      passwordOverlay.style.display = "none";
+    } else {
+      alert("Senha incorreta. Tente novamente!");
+      passwordInput.value = "";
+      passwordInput.focus();
+    }
+  });
+});
+
 // =====================================
-// 1. Ajuste do volume da música
+// 2) Ajuste do volume da música
 // =====================================
 window.addEventListener("DOMContentLoaded", () => {
   const musicaFundo = document.getElementById("musica-fundo");
-  // Define o volume para 30% (ajuste como preferir)
+  // Define o volume para 10% (ou outro valor de 0.0 a 1.0)
   musicaFundo.volume = 0.1;
 });
 
 // =====================================
-// 2. Slideshow Automático com Transição
+// 3) Slideshow Automático com Transição
 // =====================================
 const slides = document.querySelectorAll(".slides img");
 let currentSlide = 0;
@@ -32,13 +56,13 @@ setInterval(nextSlide, 3000);
 showSlide(currentSlide);
 
 // =====================================
-// 3. Efeito de “corações caindo”
+// 4) Efeito de “corações caindo”
 // =====================================
 const heartsContainer = document.getElementById("hearts-container");
 
 function createHeart() {
   const heart = document.createElement("div");
-  heart.innerText = "❥"; // Pode usar "♥", "❣", etc.
+  heart.innerText = "❥"; // Pode usar "♥", "❣" etc.
   heart.style.position = "absolute";
   heart.style.top = "-50px";
   
@@ -54,19 +78,18 @@ function createHeart() {
   heart.style.left = Math.random() * 100 + "%";
   heart.style.zIndex = 9999;
   
-  // Animação de queda
-  const fallDuration = Math.random() * 5 + 5; // entre 5s e 10s
+  // Animação de queda (5s a 10s)
+  const fallDuration = Math.random() * 5 + 5; 
   heart.style.transition = `transform ${fallDuration}s linear`;
 
   heartsContainer.appendChild(heart);
 
-  // Delay pequeno para disparar o CSS transition
+  // Pequeno delay para iniciar a queda
   setTimeout(() => {
-    // Rotação e queda
     heart.style.transform = `translateY(100vh) rotate(${Math.random() * 360}deg)`;
   }, 50);
 
-  // Remove o coração após cair
+  // Remove coração após cair
   setTimeout(() => {
     heart.remove();
   }, fallDuration * 1000);
@@ -75,4 +98,4 @@ function createHeart() {
 // Cria um coração a cada 700ms
 setInterval(createHeart, 700);
 
-console.log("Site romântico com música, corações e slideshow. Volume reduzido!");
+console.log("Site romântico com senha, música, corações e slideshow. Volume reduzido!");

@@ -17,6 +17,22 @@
   />
 </head>
 <body>
+  <!-- ========== OVERLAY DE SENHA ========== -->
+  <div id="password-overlay">
+    <div class="overlay-content">
+      <h2>Digite a Senha de 4 Dígitos</h2>
+      <input
+        type="password"
+        id="passwordInput"
+        maxlength="4"
+        placeholder="Ex: 2811"
+        autofocus
+      />
+      <button id="accessBtn">Acessar</button>
+    </div>
+  </div>
+  <!-- /OVERLAY DE SENHA -->
+
   <!-- Efeito dos corações caindo -->
   <div id="hearts-container"></div>
 
@@ -31,12 +47,16 @@
   </header>
 
   <main>
-    <p>Antes acesse: <a
+    <p>
+      Antes acesse: 
+      <a
         href="https://open.spotify.com/intl-pt/track/3hRV0jL3vUpRrcy398teAU?si=2f5519c387dc404d"
         target="_blank"
       >
         Clique aqui
-      </a></p>
+      </a>
+    </p>
+
     <!-- SEÇÕES DE MOMENTOS ESPECIAIS -->
     <!-- 10/05 -->
     <section class="momento-container">
@@ -66,7 +86,7 @@
       <div class="conteudo-momento">
         <img src="img/momento_25_06.jpg" alt="Foto momento 25/06" class="foto-momento" />
         <p>
-            Aqui você tava dódóizinha mas não aguentei, chegando de viagem no primeiro dia já queria ver você. A saudade era gigante, não aguentava mais omggg. Fomos comer churrasquin
+          Aqui você tava dódóizinha mas não aguentei, chegando de viagem no primeiro dia já queria ver você. A saudade era gigante, não aguentava mais omggg. Fomos comer churrasquin
         </p>
       </div>
     </section>
@@ -88,9 +108,10 @@
     <section class="momento-container">
       <h2 class="data-momento">07/07 - Nosso primeiro almoço de domingo</h2>
       <div class="conteudo-momento">
-        <img src="img/momento_07_07.jpg" alt="Foto momento 07/07" class="foto-momento" />
+        <img src="img/momento_07_07.jpg" alt="Foto momento 07_07" class="foto-momento" />
         <p>
           Nosso primeiro almoço de domingo, foi incrivel fazer meu famoso estrognoffzin p você amor... Pena que foi o último já que você prefere do Farofa rs
+        </p>
       </div>
     </section>
 
@@ -111,7 +132,7 @@
     <section class="momento-container">
       <h2 class="data-momento">25/08 - Nossa primeira foto dando beijinho</h2>
       <div class="conteudo-momento">
-        <img src="img/momento_25_08.jpg" alt="Foto momento 25/08" class="foto-momento" />
+        <img src="img/momento_25_08.jpg" alt="Foto momento 25_08" class="foto-momento" />
         <p>
           Um pequeno registro do nosso primeiro beijinho em uma foto vidoca
         </p>
@@ -122,7 +143,7 @@
     <section class="momento-container">
       <h2 class="data-momento">19/09 - O aniversário da minha pitoca</h2>
       <div class="conteudo-momento">
-        <img src="img/momento_19_09.jpg" alt="Foto momento 19/09" class="foto-momento" />
+        <img src="img/momento_19_09.jpg" alt="Foto momento 19_09" class="foto-momento" />
         <p>
           O dia de celebrar sua vida.
           Ver teu sorriso de aniversariante só me fez ter mais certeza
@@ -135,7 +156,7 @@
     <section class="momento-container">
       <h2 class="data-momento">14/10 - Indo ao hospital juntinhos</h2>
       <div class="conteudo-momento">
-        <img src="img/momento_14_10.jpg" alt="Foto momento 14/10" class="foto-momento" />
+        <img src="img/momento_14_10.jpg" alt="Foto momento 14_10" class="foto-momento" />
         <p>
           Nosso memorável aniversário de namoro. Batendo ponto no São Domingos, apesar de você estar dódói foi ótimo passar o dia com tu
         </p>
@@ -146,7 +167,7 @@
     <section class="momento-container">
       <h2 class="data-momento">24/10 - Dia comum</h2>
       <div class="conteudo-momento">
-        <img src="img/momento_24_10.jpg" alt="Foto momento 24/10" class="foto-momento" />
+        <img src="img/momento_24_10.jpg" alt="Foto momento 24_10" class="foto-momento" />
         <p>
           Essa aqui não teve nada, foi só pra lembrar do dia que tu me engoliu
         </p>
@@ -157,7 +178,7 @@
     <section class="momento-container">
       <h2 class="data-momento">15/11 - Nossa primeira foto na árvore de Natal</h2>
       <div class="conteudo-momento">
-        <img src="img/momento_15_11.png" alt="Foto momento 15/11" class="foto-momento" />
+        <img src="img/momento_15_11.png" alt="Foto momento 15_11" class="foto-momento" />
         <p>
           É NATAL!!!!
         </p>
@@ -168,7 +189,7 @@
     <section class="momento-container">
       <h2 class="data-momento">28/11 - Meu aniversário</h2>
       <div class="conteudo-momento">
-        <img src="img/momento_28_11.jpg" alt="Foto momento 28/11" class="foto-momento" />
+        <img src="img/momento_28_11.jpg" alt="Foto momento 28_11" class="foto-momento" />
         <p>
           Ganhei mais um ano de vida, e ainda comemorei com meu amor
         </p>
@@ -179,7 +200,7 @@
     <section class="momento-container">
       <h2 class="data-momento">04/12 - Vanessa dos Mato tocando</h2>
       <div class="conteudo-momento">
-        <img src="img/momento_04_12.jpg" alt="Foto momento 04/12" class="foto-momento" />
+        <img src="img/momento_04_12.jpg" alt="Foto momento 04_12" class="foto-momento" />
         <p>
           Noisi na feira de fazenda ouvindo vanessa do mato antes de cair uma chuvona
         </p>
@@ -190,7 +211,7 @@
     <section class="momento-container">
       <h2 class="data-momento">14/12 - Seis meses de namoro</h2>
       <div class="conteudo-momento">
-        <img src="img/momento_14_12.jpg" alt="Foto momento 14/12" class="foto-momento" />
+        <img src="img/momento_14_12.jpg" alt="Foto momento 14_12" class="foto-momento" />
         <p>
           Meio ano depois
           só tenho a agradecer pelo tanto de luz e amor
@@ -218,14 +239,13 @@
         </p>
       </div>
     </section>
-
   </main>
 
   <footer>
     <small>Feito com muito amor pelo seu Pitoco &hearts;</small>
   </footer>
 
-  <!-- JS -->
+  <!-- Script JS -->
   <script src="script.js"></script>
 </body>
 </html>
