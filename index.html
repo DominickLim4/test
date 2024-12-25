@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>6 Meses</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fontes (Cookie cursiva + Poppins clean) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@300;500;700&display=swap" 
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- Efeito dos corações caindo -->
+  <div id="hearts-container"></div>
+
+  <!-- Música de fundo (volume será ajustado via JS) -->
+  <audio id="musica-fundo" autoplay loop>
+    <source src="audio/musica.mp3" type="audio/mpeg" />
+    Seu navegador não suporta áudio em HTML5.
+  </audio>
+
+  <header>
+    <h1>6 Meses</h1>
+  </header>
+
+  <main>
+    <!-- SEÇÕES DE MOMENTOS ESPECIAIS -->
+    <!-- 10/05 -->
+    <section class="momento-container">
+      <h2 class="data-momento">10/05 - Bar do Porto</h2>
+      <div class="conteudo-momento">
+        <img src="img/momento_10_05.jpg" alt="Foto momento 10/05" class="foto-momento" />
+        <p>
+          Nossa primeira vez bebendo juntins vida, o dia em que eu quis limpar a comanda com José que até hoje você se diverte né. Rapaz...
+        </p>
+      </div>
+    </section>
+
+    <!-- 30/05 -->
+    <section class="momento-container">
+      <h2 class="data-momento">30/05 - Quando você ganhou o soverte</h2>
+      <div class="conteudo-momento">
+        <img src="img/momento_30_05.jpg" alt="Foto momento 30/05" class="foto-momento" />
+        <p>
+          Essa foi uma das primeiras vezes que tu veio oficialmente aqui em casa, e antes mesmo de namorar eu já te dei o Soverte porque sabia que você era o amor da minha vida
+        </p>
+      </div>
+    </section>
+
+    <!-- 25/06 -->
+    <section class="momento-container">
+      <h2 class="data-momento">25/06 - Nosso date pós-viagem</h2>
+      <div class="conteudo-momento">
+        <img src="img/momento_25_06.jpg" alt="Foto momento 25/06" class="foto-momento" />
+        <p>
+            Aqui você tava dódóizinha mas não aguentei, chegando de viagem no primeiro dia já queria ver você. A saudade era gigante, não aguentava mais omggg. Fomos comer churrasquin
+        </p>
+      </div>
+    </section>
+
+    <!-- 29/06 -->
+    <section class="momento-container">
+      <h2 class="data-momento">29/06 - Nosso primeiro São João juntos</h2>
+      <div class="conteudo-momento">
+        <img src="img/momento_29_06.jpg" alt="Foto momento 29/06" class="foto-momento" />
+        <p>
+          Fogueira, forró, pizza-no-chão-by-diego:
+          a combinação perfeita.
+          Foi só o primeiro de muitos São Joões que ainda vamos celebrar vidoquinha
+        </p>
+      </div>
+    </section>
+
+    <!-- 07/07 -->
+    <section class="momento-container">
+      <h2 class="data-momento">07/07 - Nosso primeiro almoço de domingo</h2>
+      <div class="conteudo-momento">
+        <img src="img/momento_07_07.jpg" alt="Foto momento 07/07" class="foto-momento" />
+        <p>
+          Nosso primeiro almoço de domingo, foi incrivel fazer meu famoso estrognoffzin p você amor... Pena que foi o último já que você prefere do Farofa rs
+      </div>
+    </section>
+
+    <!-- 14/07 - SEÇÃO MAIS ESPECIAL -->
+    <section class="momento-container especial">
+      <h2 class="data-momento">14/07 - Quando começamos a namorar</h2>
+      <div class="conteudo-momento">
+        <img src="img/momento_14_07.jpg" alt="Foto momento 14/07" class="foto-momento" />
+        <p>
+          A data mais marcante do nosso livro de amor:
+          foi nesse dia que o meu coração escolheu o seu pra sempre.
+          Foi aqui que eu tinha certeza que eu ia viver a parte mais bonita da minha vida, Te Amo!
+        </p>
+      </div>
+    </section>
+
+    <!-- 25/08 -->
+    <section class="momento-container">
+      <h2 class="data-momento">25/08 - Nossa primeira foto dando beijinho</h2>
+      <div class="conteudo-momento">
+        <img src="img/momento_25_08.jpg" alt="Foto momento 25/08" class="foto-momento" />
+        <p>
+          Um pequeno registro do nosso primeiro beijinho em uma foto vidoca
+        </p>
+      </div>
+    </section>
+
+    <!-- 19/09 -->
+    <section class="momento-container">
+      <h2 class="data-momento">19/09 - O aniversário da minha pitoca</h2>
+      <div class="conteudo-momento">
+        <img src="img/momento_19_09.jpg" alt="Foto momento 19/09" class="foto-momento" />
+        <p>
+          O dia de celebrar sua vida.
+          Ver teu sorriso de aniversariante só me fez ter mais certeza
+          de que eu amo cada pedacinho de tu vidocolite
+        </p>
+      </div>
+    </section>
+
+    <!-- 14/10 -->
+    <section class="momento-container">
+      <h2 class="data-momento">14/10 - Indo ao hospital juntinhos</h2>
+      <div class="conteudo-momento">
+        <img src="img/momento_14_10.jpg" alt="Foto momento 14/10" class="foto-momento" />
+        <p>
+          Nosso memorável aniversário de namoro. Batendo ponto no São Domingos, apesar de você estar dódói foi ótimo passar o dia com tu
+        </p>
+      </div>
+    </section>
+
+    <!-- 24/10 -->
+    <section class="momento-container">
+      <h2 class="data-momento">24/10 - Dia comum</h2>
+      <div class="conteudo-momento">
+        <img src="img/momento_24_10.jpg" alt="Foto momento 24/10" class="foto-momento" />
+        <p>
+          Essa aqui não teve nada, foi só pra lembrar do dia que tu me engoliu
+        </p>
+      </div>
+    </section>
+
+    <!-- 15/11 -->
+    <section class="momento-container">
+      <h2 class="data-momento">15/11 - Nossa primeira foto na árvore de Natal</h2>
+      <div class="conteudo-momento">
+        <img src="img/momento_15_11.png" alt="Foto momento 15/11" class="foto-momento" />
+        <p>
+          É NATAL!!!!
+        </p>
+      </div>
+    </section>
+
+    <!-- 28/11 -->
+    <section class="momento-container">
+      <h2 class="data-momento">28/11 - Meu aniversário</h2>
+      <div class="conteudo-momento">
+        <img src="img/momento_28_11.jpg" alt="Foto momento 28/11" class="foto-momento" />
+        <p>
+          Ganhei mais um ano de vida, e ainda comemorei com meu amor
+        </p>
+      </div>
+    </section>
+
+    <!-- 04/12 -->
+    <section class="momento-container">
+      <h2 class="data-momento">04/12 - Vanessa dos Mato tocando</h2>
+      <div class="conteudo-momento">
+        <img src="img/momento_04_12.jpg" alt="Foto momento 04/12" class="foto-momento" />
+        <p>
+          Noisi na feira de fazenda ouvindo vanessa do mato antes de cair uma chuvona
+        </p>
+      </div>
+    </section>
+
+    <!-- 14/12 -->
+    <section class="momento-container">
+      <h2 class="data-momento">14/12 - Seis meses de namoro</h2>
+      <div class="conteudo-momento">
+        <img src="img/momento_14_12.jpg" alt="Foto momento 14/12" class="foto-momento" />
+        <p>
+          Meio ano depois
+          só tenho a agradecer pelo tanto de luz e amor
+          que você trouxe para minha vida
+        </p>
+      </div>
+    </section>
+
+    <!-- SLIDESHOW + MENSAGEM FINAL -->
+    <section class="slide-container final-container">
+      <div class="slides">
+        <!-- Estrutura de fotos EXATAMENTE como solicitada -->
+        <img src="img/foto1.jpg" alt="Foto 1" />
+        <img src="img/foto3.jpg" alt="Foto 2" />
+        <img src="img/foto2.jpg" alt="Foto 3" />
+        <img src="img/foto4.jpg" alt="Foto 4" />
+        <img src="img/foto5.jpg" alt="Foto 5" />
+      </div>
+      <div class="mensagem-final">
+        <h3>Obrigado por cada momento incrível ao teu lado lindosa</h3>
+        <p>
+          Que nossa história continue sendo escrita
+          com sorrisos, abraços, cheiros, cuidado e muito amor.
+          Te amo MUITAOZAO.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <small>Feito com muito amor pelo seu Pitoco &hearts;</small>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
